@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.wrapper {
+    background-image: url("../images/background.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 46px;
+    margin-bottom: 240px;
+}
+
+.logo {
+    margin-right: 34px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu a {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.menu li+li {
+    margin-left: 25px;
+}
+
+.item {
+    text-align: left;
+}
+
+.title {
+    font-size: 120px;
+    line-height: 141px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+}
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
