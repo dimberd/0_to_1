@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    line-height: 1;
+    line-height: 18px;
     letter-spacing: 0.6px;
     font-style: normal;
 }
@@ -190,10 +190,48 @@ p {
     font-size: 72px;
 }
 
-.onschool__items {}
+.onschool__items {
+    display: flex;
+    justify-content: space-between;
+}
 
-.onschool__item-title {}
+.onschool__cont {
+    display: flex;
+    justify-content: center;
+}
 
-.onschool__title-inner {}
+.sun {
+    max-width: 50px;
+    max-height: 50px;
+}
 
-.onschool__item-text {}
+.airplane {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.wawe {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.onschool__title-inner {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    color: #242121;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 33px;
+    max-width: 208px;
+}
+
+.onschool__item-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 350px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #242121;
+    margin-bottom: 103px;
+}
