@@ -7,6 +7,9 @@ body {
     font-style: normal;
 }
 
+
+/* header */
+
 .container {
     max-width: 1220px;
     padding: 0 10px;
@@ -68,7 +71,7 @@ body {
 .menu__list-link {
     font-size: 24px;
     align-items: flex-end;
-    color: #fff;
+    color: #FFF;
     transition: all .3s;
 }
 
@@ -95,8 +98,11 @@ body {
     padding-top: 19px;
 }
 
+
+/* about */
+
 .about {
-    background-color: #fff;
+    background-color: #FFF;
     max-height: 966px;
 }
 
@@ -153,22 +159,15 @@ p {
     line-height: 18px;
 }
 
-.ico {}
 
-.inner__ico {}
-
-.inner__info {}
-
-.inner__text {}
+/* onschool */
 
 .onschool {
     background-color: #F8F8F8;
     max-height: 953px;
 }
 
-.onschool__inner {}
-
-.title__onschool {
+.onschool__title {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 102px;
     font-weight: 600;
@@ -180,7 +179,7 @@ p {
     position: relative;
 }
 
-.title__onschool::after {
+.onschool__title::after {
     content: "/";
     color: #00B2A0;
     max-width: 48px;
@@ -191,6 +190,10 @@ p {
     font-size: 72px;
 }
 
-.title__line {}
+.onschool__items {}
 
-.title {}
+.onschool__item-title {}
+
+.onschool__title-inner {}
+
+.onschool__item-text {}
