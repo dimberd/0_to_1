@@ -101,6 +101,14 @@ body {
 
 /* add neu  */
 
+.onschool {
+    background: #F8F8F8;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
 .inner__ico {}
 
 .inner__link {}
