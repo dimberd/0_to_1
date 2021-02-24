@@ -42,8 +42,6 @@ body {
     align-items: center;
 }
 
-.logo {}
-
 .logo__img {
     display: block;
     max-width: 100%;
@@ -86,6 +84,7 @@ body {
     font-size: 200px;
     line-height: 1;
     color: #0D302C;
+    text-transform: uppercase;
 }
 
 .header__subtitle {
@@ -115,42 +114,34 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 72px;
-    letter-spacing: 0.6px;
     color: #00B2A0;
     max-width: 48px;
-    height: 85px;
-    justify-content: flex-end;
-    align-items: center;
+    max-height: 85px;
     padding-top: 32px;
 }
 
 .title {
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 108px;
+    margin-bottom: 102px;
     font-weight: 600;
     font-size: 48px;
     line-height: 1;
     color: #01353E;
     justify-content: center;
-    margin-left: 86px;
+    text-transform: uppercase;
 }
 
 .about__text {
     display: flex;
-    justify-content: space-between;
-    margin-right: 106px;
+    margin-bottom: 200px;
 }
 
+.about__text-r,
 .about__text-l {
-    text-align: left;
-    flex-direction: column;
     padding: 0 8px;
-}
-
-.about__text-r {
+    margin-right: 120px;
+    max-width: 480px;
     text-align: left;
-    flex-direction: column;
-    padding: 0 8px;
 }
 
 p {
@@ -158,7 +149,48 @@ p {
     margin-bottom: 30px;
     color: #242121;
     font-weight: 300;
-    max-width: 480px;
     font-size: 14px;
     line-height: 18px;
 }
+
+.ico {}
+
+.inner__ico {}
+
+.inner__info {}
+
+.inner__text {}
+
+.onschool {
+    background-color: #F8F8F8;
+    max-height: 953px;
+}
+
+.onschool__inner {}
+
+.title__onschool {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 102px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    color: #01353E;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title__onschool::after {
+    content: "/";
+    color: #00B2A0;
+    max-width: 48px;
+    max-height: 85px;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+}
+
+.title__line {}
+
+.title {}
