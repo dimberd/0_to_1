@@ -200,19 +200,14 @@ p {
     justify-content: center;
 }
 
-.sun {
-    max-width: 50px;
-    max-height: 50px;
-}
-
-.airplane {
-    max-width: 50px;
-    max-height: 50px;
-}
-
+.sun,
+.airplane,
 .wawe {
     max-width: 50px;
     max-height: 50px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .onschool__title-inner {
@@ -223,7 +218,6 @@ p {
     color: #242121;
     text-transform: uppercase;
     padding: 10px;
-    margin-bottom: 33px;
     max-width: 208px;
 }
 
@@ -234,4 +228,24 @@ p {
     font-size: 14px;
     color: #242121;
     margin-bottom: 103px;
+}
+
+
+/* ranking */
+
+.ranking__info-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    color: #242121;
+}
+
+.ranking__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    max-width: 600px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #242121;
 }
