@@ -24,20 +24,8 @@ body {
     line-height: 1.3;
     letter-spacing: 0.6px;
     font-style: normal;
-    color: #242121;
     background-color: #fff;
 }
-
-
-/* span {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: 0.6px;
-    font-style: normal;
-    color: #242121;
-} */
 
 
 /* header */
@@ -46,17 +34,20 @@ body {
     width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
-    display: flex;
 }
 
 .header__nav {
     display: flex;
-    max-width: 100%;
     justify-content: space-between;
 }
 
+.title__inner {
+    display: flex;
+    justify-content: center;
+}
+
 .header__mouse {
-    display: block;
+    display: flex;
     padding-top: 314px;
     margin: auto;
 }
@@ -74,12 +65,22 @@ body {
 
 .header {
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
+    background-size: contain;
+    background: linear-gradient (180deg, #01353e 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+    min-height: 45%;
+    width: 100%;
+    top: 0;
 }
 
-.header__top {}
+
+/* .header::after {
+    content: "";
+    
+} */
 
 .nav {
     justify-content: space-between;
@@ -130,22 +131,22 @@ body {
     flex-flow: row wrap;
 }
 
-.header__title {
+.header__subtitle {
     font-family: "Raleway", sans-serif;
-    color: red;
+    color: #0d302c;
     font-weight: bold;
     font-size: 200px;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
-.header__subtitle {
+.header__title {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 400;
     text-align: center;
     min-width: 426px;
-    color: red;
+    color: 0d302c;
 }
 
 
@@ -162,6 +163,10 @@ body {
     min-width: 1184px;
 }
 
+.about__inner {
+    display: flex;
+}
+
 .title {
     font-family: "Raleway", sans-serif;
     margin: 1px -24px 103px 0;
@@ -171,6 +176,7 @@ body {
     color: #01353e;
     text-transform: uppercase;
     text-align: center;
+    max-width: 939px;
 }
 
 .title::after {
@@ -218,12 +224,14 @@ p {
 
 .onschool__items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .onschool__cont {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .onschool__title {
@@ -238,9 +246,11 @@ p {
     align-items: center;
 }
 
-.onschool__text p {
+.onschool__text {
+    display: flex;
+    justify-content: center;
     width: 350px;
-    margin: 19px 74px 102px 0;
+    /* margin: 19px 74px 102px 0; */
 }
 
 .sun::before {
@@ -277,56 +287,56 @@ p {
 }
 
 .ranking__info {
-    width: 294px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /*wrap*/
 }
 
-.ranking__a::after {
-    content: "85%";
+span {
+    display: flex;
     font-size: 24px;
     font-weight: 400;
 }
 
-.ranking__b::after {
-    content: "95%";
-    font-size: 24px;
-    font-weight: 400;
+.grafic__a,
+.grafic__b,
+.grafic__c {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/info.svg);
 }
 
-.ranking__c::after {
-    content: "99%";
-    font-size: 24px;
-    font-weight: 400;
+.ranking__a,
+.ranking__b,
+.ranking__c {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .ranking__inner {
     display: flex;
     margin-bottom: 30px;
-    justify-content: space-between;
+    /* justify-content: left;
+    flex-direction: row; */
 }
 
 .grafic__a {
-    background-image: url(../images/info.svg);
     max-height: 15px;
     width: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .grafic__b {
-    background-image: url(../images/info.svg);
     max-height: 15px;
     width: 247px;
-    margin-bottom: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .grafic__c {
-    background-image: url(../images/info.svg);
     max-height: 15px;
     width: 293px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .ranking__item {
@@ -338,7 +348,6 @@ p {
     max-width: 600px;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
 }
 
 
