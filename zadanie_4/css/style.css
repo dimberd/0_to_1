@@ -407,7 +407,8 @@ p {
 /* .gallery */
 
 .gallery {
-    padding: ;
+    display: flex;
+    justify-content: space-around;
 }
 
 .blockquote {}
@@ -420,18 +421,39 @@ p {
 
 .gallery__btn {}
 
+
+/*  */
+
 .gallery__content {}
 
-.gallery__filter {}
+.gallery__filter {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.gallery__filter:not(::last-child) {
+    margin-right: 20px;
+}
 
 .gallery__item {}
 
 .gallery__link {}
 
-.gallery__numbers {}
+.gallery__numbers {
+    display: flex;
+    justify-content: space-between;
+    man-width: 800px;
+}
 
 .gallery__video {}
 
-.subtitle {}
+.gallery__subtitle {
+    display: flex;
+    color: #0d302c;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 64px;
+}
 
 .title {}
