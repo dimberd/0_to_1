@@ -8,10 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-main,
-section {
-    width: 1220px;
-    padding: 0 10px;
+main {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -65,22 +62,21 @@ body {
 
 .header {
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     min-height: 100vh;
-    overflow: hidden;
     position: relative;
-    background-size: contain;
-    background: linear-gradient rgba(180deg, #01353e 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
-    min-height: 45%;
-    width: 100%;
-    top: 0;
+    background-size: cover;
 }
 
-
-/* .header::after {
-    content: "";
-    
-} */
+.header::before {
+    content: '';
+    position: absolute;
+    height: 490px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+}
 
 .nav {
     justify-content: space-between;
@@ -407,13 +403,30 @@ p {
 /* .gallery */
 
 .gallery {
-    display: flex;
-    justify-content: space-around;
+    padding-top: 200px;
+    display: block;
 }
 
-.blockquote {}
+.blockquote {
+    padding-top: 281px;
+    display: flex;
+    justify-content: center;
+    width: 575px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 80px 15px 80px;
+    text-align: center;
+    background: #f8f8f8;
+    /* margin-bottom: 200px; */
+}
 
-.blockquote__author {}
+.blockquote__author {
+    width: 273px;
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+}
 
 .galery__top {}
 
@@ -421,10 +434,9 @@ p {
 
 .gallery__btn {}
 
-
-/*  */
-
-.gallery__content {}
+.gallery__content {
+    padding-top: 50px;
+}
 
 .gallery__filter {
     display: flex;
@@ -455,5 +467,17 @@ p {
     text-transform: uppercase;
     font-size: 64px;
 }
+
+.gallery__item-1a {}
+
+.gallery__item-2a {}
+
+.gallery__item-3a {}
+
+.gallery__item-4a {}
+
+.gallery__item-5a {}
+
+.gallery__item-6a {}
 
 .title {}
