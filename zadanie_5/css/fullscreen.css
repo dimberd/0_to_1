@@ -1,0 +1,10 @@
+/* Fullscreen  */
+
+.fancybox-button--fullscreen::before {
+    width: 15px;
+    height: 11px;
+    left: calc(70% - 7px);
+    top: calc(70% - 6px);
+    border: 2px solid;
+    background: none;
+}
