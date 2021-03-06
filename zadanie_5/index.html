@@ -111,9 +111,9 @@
                 </div>
                 <div class="onschool__items">
                     <div class="onschool__cont">
-                        <div class="onschool__title">проживание
+                        <h3 class="onschool__title">проживание
                             <div class="sun"></div>
-                        </div>
+                        </h3>
                         <div class="onschool__text">
                             <p>
                                 Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и бесплатный Wi-Fi. Из верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
@@ -121,20 +121,23 @@
                         </div>
                     </div>
                     <div class="onschool__cont">
-                        <div class="onschool__title">перелет и страховку
+                        <h3 class="onschool__title">перелет и страховку
                             <div class="airplane"></div>
-                        </div>
+                        </h3>
 
                         <div class="onschool__text">
                             <p>
-                                Все участники программы застрахованы страховой компанией Allianz. Перелет из Тенерифе до острова Лансароте и обратно входит в стоимость программы
+                                Все участники программы застрахованы страховой компанией Allianz.
+                            </p>
+                            <p>
+                                Перелет из Тенерифе до острова Лансароте и обратно входит в стоимость программы
                             </p>
                         </div>
                     </div>
                     <div class="onschool__cont">
-                        <div class="onschool__title">обучение и экипировку
+                        <h3 class="onschool__title">обучение и экипировку
                             <div class="wawe"></div>
-                        </div>
+                        </h3>
 
                         <div class="onschool__text">
                             <p>
@@ -152,7 +155,9 @@
                         <div class="ranking__info">
                             <div class="ranking__inner">
                                 <div class="grafic__a">
-                                    <div class="ranking__proc-a title__text">85%</div>
+                                    <div class="ranking__proc-a title__text">
+                                        <p>85%</p>
+                                    </div>
                                 </div>
                                 <p class="ranking__a">Приехали второй раз</p>
                             </div>
@@ -183,12 +188,9 @@
                 </div>
         </section>
         <!-- /* surfer */ -->
-        <section class="surfer">
+        <section class="surfer" style="background-image: url(images/surfer.jpg);">
             <div class="container">
                 <div class="surfer__inner">
-                    <div class="surfer__wawe">
-                        <img class="surfer__img" src=" images/surfer.jpg" alt="серфер на волне">
-                    </div>
                     <h2 class="surfer__title">покоряй вершины</h2>
                     <div class="surfer__text">
                         <p>
@@ -212,95 +214,98 @@
                 <div class="galery__top">
                     <h2 class="title">галерея
                     </h2>
-                    <div class="gallery__filter">
-                        <ul class="gallery__inner">все
-                            <li>
-                                <a class="gallery__link" href="#"></a>
-                            </li>
-                        </ul>
-                        <ul class="gallery__inner">туристы
-                            <li>
-                                <a class="gallery__link" href="#"></a>
-                            </li>
-                        </ul>
-                        <ul class="gallery__inner">природа
-                            <li>
-                                <a class="gallery__link" href="#"></a>
-                            </li>
-                        </ul>
-                        <ul class="gallery__inner">профи
-                            <li>
-                                <a class="gallery__link" href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="gallery__inner">
+                        <li class="gallery__list"> <button class="gallery__btn" data-filter="all">все</button>
+                        </li>
+                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-a">туристы</button>
+                        </li>
+                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-b">природа</button>
+                        </li>
+                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-c">профи</button>
+                        </li>
+                    </ul>
                     <div class="gallery__item">
                         <ul class="gallery__content">
-                            <li class="gallery__gradient-1a">
-                                <a href="images/gallery/1.jpg" class="gallery__link-1a" data-fancybox="gallery">
-                                    <img src="images/gallery/1.jpg" alt="серфер на волне"></a>
+                            <li class="gallery__mix mix gallery__mix-a">
+                                <a href="images/gallery/1.jpg" class="gallery__link"> <img src="images/gallery/1.jpg"" alt=" серфер на
+                    волне"> </a>
                             </li>
-                            <li class="gallery__gradient">
-                                <a href="images/gallery/2.jpg" class="gallery__link-2a" data-fancybox="gallery">
-                                    <img src="images/gallery/2.jpg" alt="ребенок на серферной доске"></a>
+                            <li class="gallery__mix mix gallery__mix-b">
+                                <a href="images/gallery/2.jpg" class="gallery__link"><img src="images/gallery/2.jpg"" alt=" ребенок на
+                    пляже"> </a>
                             </li>
-                            <li class="gallery__gradient">
-                                <a href="images/gallery/3.jpg" class="gallery__link-3a" data-fancybox="gallery">
-                                    <img src="images/gallery/3.jpg" alt="серфер на пляже"></a>
+                            <li class="gallery__mix mix gallery__mix-c">
+                                <a href="images/gallery/3.jpg" class="gallery__link"><img src="images/gallery/3.jpg"" alt=" серфер с
+                    доской на пляже"> </a>
                             </li>
-                            <li class="gallery__gradient">
-                                <a href="images/gallery/4.jpg" class="gallery__link-4a" data-fancybox="gallery">
-                                    <img src="images/gallery/4.jpg" alt="две девушки на пляже"></a>
+                            <li class="gallery__mix mix gallery__mix-c">
+                                <a href="images/gallery/4.jpg" class="gallery__link"><img src="images/gallery/4.jpg"" alt=" две девушки
+                    на пляже"> </a>
                             </li>
-                            <li class="gallery__gradient">
-                                <a href="images/gallery/5.jpg" class="gallery__link-5a" data-fancybox="gallery">
-                                    <img src="images/gallery/5.jpg" alt="волна"></a>
+                            <li class="gallery__mix mix gallery__mix-b">
+                                <a href="images/gallery/5.jpg" class="gallery__link"><img src="images/gallery/5.jpg"" alt=" морская
+                    волна"> </a>
                             </li>
-                            <li class="gallery__gradient">
-                                <a href="images/gallery/6.jpg" class="gallery__link-6a" data-fancybox="gallery">
-                                    <img src="images/gallery/6.jpg" alt="девушка с серферной доской"></a>
+                            <li class="gallery__mix mix gallery__mix-a">
+                                <a href="images/gallery/6.jpg" class="gallery__link"><img src="images/gallery/6.jpg"" alt=" девушка с
+                    доской на пляже"> </a>
                             </li>
                         </ul>
                     </div>
-                    <a class="gallery__add" href="#">показать еще</a>
-                    <blockquote class="blockquote">
-                        «Если сомневаешься – иди катайся.»
-                        <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
-                    </blockquote>
-                    <div class="gallery__video">
-                        <a class="gallery__video-link" href="#">
-                            <img src="images/ico/play.svg" alt="иконка воспроизвести видео">
-                        </a>
+                    <div class="gallery__position-btn">
+                        <div class="gallery__btn">
+                            <button class="gallery__add-btn" href="#">показать еще</button>
+                        </div>
                     </div>
-                    <div class="gallery__numbers">
-                        <h3 class="gallery__subtitle">
-                            450
-                            <span>туристов</span>
-                        </h3>
-                        <h3 class="gallery__subtitle">
-                            2500
-                            <span>часов катания</span>
-                        </h3>
-                        <h3 class="gallery__subtitle">
-                            10
-                            <span>проф. тренеров</span>
-                        </h3>
-                        <h3 class="gallery__subtitle">
-                            365
-                            <span>дней в году</span>
-                        </h3>
-                    </div>
+
                 </div>
             </div>
         </section>
+        <!-- /* .blockquote */ -->
+        <div class="container">
+            <div class="blockquote__cite">
+                <blockquote class="blockquote">
+                    «Если сомневаешься – иди катайся.»
+                    <cite class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
+                </blockquote>
+            </div>
+        </div>
+        <!-- /* .gallery__video */ -->
+        <div class="container">
+            <div class="gallery__video">
+                <div class="gallery__video-item" style="background-image: url(images/video.jpg);">
+                    <a class="gallery__video-link" data-fancybox href="https://youtu.be/Tl0BsFbInFw">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /* .gallery__numbers */ -->
+        <div class="container">
+            <div class="gallery__numbers">
+                <ul class="gallery__item-num">
+                    <li class="gallery__subtitle">450
+                        <span>туристов</span>
+                    </li>
+                    <li class="gallery__subtitle">2500
+                        <span>часов катания</span>
+                    </li>
+                    <li class="gallery__subtitle">10
+                        <span>проф. тренеров</span>
+                    </li>
+                    <li class="gallery__subtitle">365
+                        <span>дней в году</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
 
+    <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
