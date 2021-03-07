@@ -312,92 +312,64 @@ body {
 
 /*поправить, можно это сделать на гридах? */
 
-.ranking__all {
-    padding-top: 100px;
+.ranking {
+    background-color: #F8F8F8;
+    padding: 103px 0 200px;
     display: flex;
-}
-
-.ranking__info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-.ranking__proc-a {
+.stat {
     display: flex;
-    justify-content: flex-end;
-    width: 250px;
+    flex-flow: row wrap;
+    max-width: 300px;
 }
 
-.ranking__proc-b {
+.stat__inner {
     display: flex;
-    justify-content: flex-end;
-    width: 295px;
+    max-width: 300px;
 }
 
-.ranking__proc-c {
-    display: flex;
-    justify-content: flex-end;
-    width: 345px;
+.stat__subtile {
+    margin-bottom: 20px;
 }
 
-.grafic__a,
-.grafic__b,
-.grafic__c {
+.stat__wave {
+    width: 300px;
+    height: 15px;
+    background-image: url(../images/info.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/info.svg);
-    max-height: 15px;
+    background-position: right bottom;
+    margin: 0 10px 10px 0;
 }
 
-.ranking__a,
-.ranking__b,
-.ranking__c {
-    font-size: 14px;
-    font-weight: 300;
-    text-align: left;
-    max-width: 140px;
-}
-
-.ranking__inner {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-}
-
-.grafic__a {
-    max-width: 200px;
-}
-
-.grafic__b {
-    width: 247px;
-}
-
-.grafic__c {
-    width: 293px;
-}
-
-.ranking__item {
-    font-size: 14px;
-    font-weight: 300;
+.stat__numb {
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .ranking__text {
+    max-width: 600px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 600px;
+    flex-flow: row wrap;
+}
+
+.ranking__text p:first-child {
+    margin-bottom: 35px;
 }
 
 
 /* surfer */
 
-.surfer__bg {
+.surfer {
+    background-image: url(../images/surfer.jpg);
     padding: 200px 0 145px 0;
     background-repeat: no-repeat;
-    background-size: 50% 100%;
-    background-position: 100% 50%;
+    background-size: 50%;
+    background-position: top right;
 }
 
 
@@ -489,6 +461,9 @@ body {
     cursor: pointer;
     background: transparent;
     outline: transparent;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery__btn:after {
@@ -511,20 +486,14 @@ body {
     border: 1px solid #C4C4C4;
     cursor: pointer;
     font-size: 24px;
+    background: #FFFFFF;
+    padding: 15px;
 }
 
-.gallery__position-btn {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery__add-btn {
+.gallery__add {
     display: flex;
     text-align: center;
     text-transform: uppercase;
-    padding: 15px;
 }
 
 .gallery__content {
@@ -535,12 +504,18 @@ body {
     flex-flow: row wrap;
 }
 
+
+/* градиент не получилось сделать */
+
 .gallery__link {
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
-.gallery__item:hover {
-    fill: #00b2a0;
+.gallery__mix:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 
@@ -580,7 +555,7 @@ body {
     padding-top: 200px;
 }
 
-.gallery__video-item {
+.gallery__video-link {
     height: 600px;
     display: flex;
     justify-content: center;
@@ -591,36 +566,26 @@ body {
     outline: transparent;
 }
 
-.gallery__video-link {
-    /* background-image: url("../images/icon/play.svg");
-        display: block;
-        width: 80px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
-        transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); */
-}
-
 .gallery__video-link path {
     transition: fill 0.6s;
-}
-
-.gallery__video-link:focus path {
-    fill: tomato;
 }
 
 .gallery__video-link:hover path {
     fill: #00b2a0;
 }
 
-.gallery__video-link:active path {
-    fill: teal;
-}
 
-.gallery__video-link:hover {
-    transform: scale(1.2);
-}
+/* не работает? */
+
+
+/* .gallery__video-link:focus path {
+    fill: tomato;
+}  */
+
+
+/* .gallery__video-link:active path {
+    fill: #0048ff;
+}  */
 
 
 /* .gallery__numbers */
@@ -636,7 +601,7 @@ body {
 }
 
 .gallery__subtitle {
-    color: #0d302c;
+    color: #01353e;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
@@ -646,21 +611,11 @@ body {
     flex-direction: column;
 }
 
-.gallery__subtitle:not(:last-child) {
-    margin-right: 100px;
-}
-
-span {
+.gallery__text {
     font-weight: 300;
     font-size: 14px;
 }
 
-.gallery__add {}
-
-.gallery__btn {}
-
-.gallery__gradient:hover {}
-
-.gallery__item {}
-
-.gallery__link {}
+.gallery__subtitle:not(:last-child) {
+    margin-right: 100px;
+}
