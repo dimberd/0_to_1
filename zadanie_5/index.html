@@ -21,6 +21,7 @@
                     <a class="header__nav" href="#">
                         <img class="logo__img" src="images/logo.svg" alt="логотип">
                     </a>
+                    <!-- /* .nav */ -->
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -46,10 +47,11 @@
                 </div>
             </div>
         </div>
+        <!-- /* .header__content */ -->
         <div class="header__content">
             <div class="header__text">
-                <div class="subtitle">wawe</div>
-                <h1 class="title__text">Школа серфинга на канарских Островах</h1>
+                <div class="header__title title">wawe</div>
+                <h1 class="header__subtitle subtitle">Школа серфинга на канарских Островах</h1>
             </div>
             <div class="header__mouse">
                 <a href="#about">
@@ -67,7 +69,7 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="about__inner">
-                    <h2 class="title"> о школе, о серфинге, о канарах </h2>
+                    <h2 class="about__title title"> о школе, о серфинге, о канарах </h2>
                 </div>
             </div>
             <div class="about__text">
@@ -106,12 +108,12 @@
         <!-- /* onschool */ -->
         <section class="onschool">
             <div class="container">
-                <div class="title__inner">
-                    <h2 class="title">в школе вы получите</h2>
+                <div class="onschool__inner">
+                    <h2 class="onschool__title title">в школе вы получите</h2>
                 </div>
                 <div class="onschool__items">
                     <div class="onschool__cont">
-                        <h3 class="onschool__title">проживание
+                        <h3 class="onschool__subtitle subtitle">проживание
                             <div class="sun"></div>
                         </h3>
                         <div class="onschool__text">
@@ -121,7 +123,7 @@
                         </div>
                     </div>
                     <div class="onschool__cont">
-                        <h3 class="onschool__title">перелет и страховку
+                        <h3 class="onschool__subtitle subtitle">перелет и страховку
                             <div class="airplane"></div>
                         </h3>
 
@@ -135,7 +137,7 @@
                         </div>
                     </div>
                     <div class="onschool__cont">
-                        <h3 class="onschool__title">обучение и экипировку
+                        <h3 class="onschool__subtitle subtitle">обучение и экипировку
                             <div class="wawe"></div>
                         </h3>
 
@@ -150,8 +152,29 @@
             <!-- /* ranking */ -->
             <div class="ranking">
                 <div class="container">
-                    <!-- поправить -->
-                    <div class="ranking__all">
+                    <div class="stat">
+                        <div class="stat__inner">
+                            <span class="stat__wave" style="max-width: calc(300px - 15%);"></span>
+                            <span class="stat__numb">85%</span>
+                        </div>
+                        <div class="stat__subtile">Приехали второй раз
+                        </div>
+                        <div class="stat__inner">
+                            <span class="stat__wave" style="max-width: calc(300px - 5%);"></span>
+                            <span class="stat__numb">95%</span>
+                        </div>
+                        <div class="stat__subtile">Научились кататься
+                        </div>
+                        <div class="stat__inner">
+                            <span class="stat__wave" style="max-width: calc(300px - 1%);"></span>
+                            <span class="stat__numb">99%</span>
+                        </div>
+                        <div class="stat__subtile">Довольных клиентов
+                        </div>
+                    </div>
+
+                    <!-- поправить, можно это сделать на гридах? -->
+                    <!-- <div class="ranking__all">
                         <div class="ranking__info">
                             <div class="ranking__inner">
                                 <div class="grafic__a">
@@ -173,37 +196,39 @@
                                 </div>
                                 <p class="ranking__a">Довольных клиентов</p>
                             </div>
-                        </div>
-                        <!-- поправить -->
-                        <div class="ranking__text">
-                            <p>
-                                Огромным преимуществом нашей школы является собственная методика обучения. Мы разработали собственный стиль обучения серфингу, который позволяет новичкам максимально быстро встать на доску.
-                            </p>
-                            <p>
-                                Именно наша методика и наши преподаватели позволили нам пройти аттестацию Федерации серфинга Канарских островов - FEDERACIÓN CANARIA DE SURF. Это означает, что наша школа соответствует всем мировым стандартам. Переаттестация производится ежегодно и это
-                                позволяет нам всегда стремиться к улучшению обучения.
-                            </p>
-                        </div>
+                        </div> -->
+                    <!-- поправить -->
+                    <div class="ranking__text">
+                        <p>
+                            Огромным преимуществом нашей школы является собственная методика обучения. Мы разработали собственный стиль обучения серфингу, который позволяет новичкам максимально быстро встать на доску.
+                        </p>
+                        <p>
+                            Именно наша методика и наши преподаватели позволили нам пройти аттестацию Федерации серфинга Канарских островов - FEDERACIÓN CANARIA DE SURF. Это означает, что наша школа соответствует всем мировым стандартам. Переаттестация производится ежегодно и это
+                            позволяет нам всегда стремиться к улучшению обучения.
+                        </p>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- /* surfer */ -->
-        <section class="surfer" style="background-image: url(images/surfer.jpg);">
+        <section class="surfer">
             <div class="container">
-                <div class="surfer__inner">
-                    <h2 class="surfer__title">покоряй вершины</h2>
-                    <div class="surfer__text">
-                        <p>
-                            Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы по лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами. Все члены преподавательского состава являются
-                            сертифицированными членами Федерации серфинга Канарских островов. Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за границей!
-                        </p>
-                        <p>
-                            Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся по всему миру различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны: вас обучают лучшие тренеры!
-                        </p>
-                        <p>
-                            Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня ТОП. Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в группах. Однако, мы предлагаем персональные
-                            уроки серфинга - только вы и тренер! П
-                        </p>
+                <div class="surfer__bg" style="background-image: url(images/surfer.jpg);">
+                    <div class="surfer__inner">
+                        <h2 class="surfer__title title">покоряй вершины</h2>
+                        <div class="surfer__text">
+                            <p>
+                                Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы по лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами. Все члены преподавательского состава являются
+                                сертифицированными членами Федерации серфинга Канарских островов. Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за границей!
+                            </p>
+                            <p>
+                                Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся по всему миру различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны: вас обучают лучшие тренеры!
+                            </p>
+                            <p>
+                                Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня ТОП. Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в группах. Однако, мы предлагаем персональные
+                                уроки серфинга - только вы и тренер! П
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,54 +236,55 @@
         <!-- /* .gallery */ -->
         <section class="gallery">
             <div class="container">
-                <div class="galery__top">
-                    <h2 class="title">галерея
+                <div class="gallery__top">
+                    <h2 class="gallery__title title">галерея
                     </h2>
-                    <ul class="gallery__inner">
-                        <li class="gallery__list"> <button class="gallery__btn" data-filter="all">все</button>
+                </div>
+                <ul class="gallery__inner">
+                    <li class="gallery__list subtitle"> <button type=submit class="gallery__btn" data-filter="all">все</button>
+                    </li>
+                    <li class="gallery__list subtitle"> <button type=submit class="gallery__btn" data-filter=".gallery__mix-a">туристы</button>
+                    </li>
+                    <li class="gallery__list subtitle"> <button type=submit class="gallery__btn" data-filter=".gallery__mix-b">природа</button>
+                    </li>
+                    <li class="gallery__list subtitle"> <button type=submit class="gallery__btn" data-filter=".gallery__mix-c">профи</button>
+                    </li>
+                </ul>
+                <div class="gallery__item">
+                    <ul class="gallery__content">
+                        <li class="gallery__mix mix gallery__mix-a">
+                            <a href="images/gallery/1.jpg" class="gallery__link"> <img src="images/gallery/1.jpg"" alt=" серфер на
+                  волне"> </a>
                         </li>
-                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-a">туристы</button>
+                        <li class="gallery__mix mix gallery__mix-b">
+                            <a href="images/gallery/2.jpg" class="gallery__link"><img src="images/gallery/2.jpg"" alt=" ребенок на
+                  пляже"> </a>
                         </li>
-                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-b">природа</button>
+                        <li class="gallery__mix mix gallery__mix-c">
+                            <a href="images/gallery/3.jpg" class="gallery__link"><img src="images/gallery/3.jpg"" alt=" серфер с
+                  доской на пляже"> </a>
                         </li>
-                        <li class="gallery__list"> <button class="gallery__btn" data-filter=".gallery__mix-c">профи</button>
+                        <li class="gallery__mix mix gallery__mix-c">
+                            <a href="images/gallery/4.jpg" class="gallery__link"><img src="images/gallery/4.jpg"" alt=" две девушки на
+                  пляже"> </a>
+                        </li>
+                        <li class="gallery__mix mix gallery__mix-b">
+                            <a href="images/gallery/5.jpg" class="gallery__link"><img src="images/gallery/5.jpg"" alt=" морская
+                  волна"> </a>
+                        </li>
+                        <li class="gallery__mix mix gallery__mix-a">
+                            <a href="images/gallery/6.jpg" class="gallery__link"><img src="images/gallery/6.jpg"" alt=" девушка с
+                  доской на пляже"> </a>
                         </li>
                     </ul>
-                    <div class="gallery__item">
-                        <ul class="gallery__content">
-                            <li class="gallery__mix mix gallery__mix-a">
-                                <a href="images/gallery/1.jpg" class="gallery__link"> <img src="images/gallery/1.jpg"" alt=" серфер на
-                    волне"> </a>
-                            </li>
-                            <li class="gallery__mix mix gallery__mix-b">
-                                <a href="images/gallery/2.jpg" class="gallery__link"><img src="images/gallery/2.jpg"" alt=" ребенок на
-                    пляже"> </a>
-                            </li>
-                            <li class="gallery__mix mix gallery__mix-c">
-                                <a href="images/gallery/3.jpg" class="gallery__link"><img src="images/gallery/3.jpg"" alt=" серфер с
-                    доской на пляже"> </a>
-                            </li>
-                            <li class="gallery__mix mix gallery__mix-c">
-                                <a href="images/gallery/4.jpg" class="gallery__link"><img src="images/gallery/4.jpg"" alt=" две девушки
-                    на пляже"> </a>
-                            </li>
-                            <li class="gallery__mix mix gallery__mix-b">
-                                <a href="images/gallery/5.jpg" class="gallery__link"><img src="images/gallery/5.jpg"" alt=" морская
-                    волна"> </a>
-                            </li>
-                            <li class="gallery__mix mix gallery__mix-a">
-                                <a href="images/gallery/6.jpg" class="gallery__link"><img src="images/gallery/6.jpg"" alt=" девушка с
-                    доской на пляже"> </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gallery__position-btn">
-                        <div class="gallery__btn">
-                            <button class="gallery__add-btn" href="#">показать еще</button>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="gallery__position-btn">
+                    <div class="gallery__btn">
+                        <button class="gallery__add-btn" href="#">показать еще</button>
+                    </div>
+                </div>
+
+
             </div>
         </section>
         <!-- /* .blockquote */ -->
@@ -275,6 +301,9 @@
             <div class="gallery__video">
                 <div class="gallery__video-item" style="background-image: url(images/video.jpg);">
                     <a class="gallery__video-link" data-fancybox href="https://youtu.be/Tl0BsFbInFw">
+                        <svg width="75" height="88" viewBox="0 0 75 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M75 44L0 87.3013L0 0.69873L75 44Z" fill="#373A39" />
+            </svg>
                     </a>
                 </div>
             </div>
