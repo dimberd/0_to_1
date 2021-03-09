@@ -11,7 +11,6 @@ html {
 main,
 section {
     width: 1220px;
-    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -23,19 +22,14 @@ body {
     letter-spacing: 0.6px;
     font-style: normal;
     background-color: #fff;
+    color: #01353E;
 }
 
 .title {
     font-family: "Raleway", sans-serif;
-    letter-spacing: 0.6px;
-    font-style: normal;
-    color: #01353E;
 }
 
 .subtitle {
-    font-family: "Roboto Condensed", sans-serif;
-    letter-spacing: 0.6px;
-    font-style: normal;
     color: #242121;
 }
 
@@ -48,29 +42,32 @@ body {
     margin: 0 auto;
 }
 
-.header__inner {
-    padding-top: 35px;
+.header__top {
     display: flex;
-    margin-bottom: 241px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__inner {
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 230px;
     align-items: center;
     max-width: 956px;
     justify-content: flex-start;
 }
 
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.logo__nav {
     position: relative;
+    padding-top: 2px;
 }
 
 .header__mouse {
-    padding-top: 314px;
-    margin-bottom: 92px;
+    padding-top: 300px;
 }
 
 .header__mouse svg {
-    transition: transform all 0.4s ease cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: transform 0.4s ease;
 }
 
 .header__mouse svg:hover {
@@ -80,10 +77,9 @@ body {
 .header {
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
+    max-height: 1080px;
 }
 
 .header::before {
@@ -98,7 +94,7 @@ body {
 
 .logo__img {
     margin-right: 185px;
-    transition: transform all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.6s;
 }
 
 .logo__img:hover {
@@ -109,20 +105,26 @@ body {
 /* .nav */
 
 .nav {
-    justify-content: space-between;
+    display: flex;
     position: relative;
+    align-items: center;
+    padding-top: 24px;
 }
 
-.nav__list {
+.menu {
     display: flex;
     justify-content: space-between;
 }
 
-.nav__item:not(:last-child) {
+.menu__list {
+    display: flex;
+}
+
+.menu__list:not(:last-child) {
     margin-right: 45px;
 }
 
-.nav__link {
+.menu__link {
     font-size: 24px;
     font-weight: 400;
     align-items: flex-end;
@@ -133,7 +135,7 @@ body {
     outline: transparent;
 }
 
-.nav__link:after {
+.menu__link:after {
     content: "";
     background-color: #00b2a0;
     transition: width 0.3s ease-in-out;
@@ -144,12 +146,12 @@ body {
     position: absolute;
 }
 
-.nav__link:hover {
+.menu__link:hover {
     border-bottom: 1px solid #00b2a0;
 }
 
-.nav__link:hover:after,
-.nav__link:focus:after {
+.menu__link:hover:after,
+.menu__link:focus:after {
     width: 100%;
 }
 
@@ -159,19 +161,19 @@ body {
 .header__content {
     display: flex;
     max-width: 800px;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin: auto;
 }
 
 .header__text {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
 
 .header__title {
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 200px;
     text-transform: uppercase;
@@ -181,6 +183,7 @@ body {
 .header__subtitle {
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
 }
 
 
@@ -188,7 +191,7 @@ body {
 
 .about {
     background-color: #fff;
-    padding: 189px 0 199px;
+    padding: 187px 10px 199px;
 }
 
 .about__inner {
@@ -196,18 +199,15 @@ body {
     justify-content: center;
 }
 
-.about__title {
+.title {
     font-weight: 600;
     font-size: 48px;
     text-transform: uppercase;
-    position: relative;
 }
 
-.about__title::after {
+.title::after {
     content: "/";
     color: #00b2a0;
-    max-width: 48px;
-    max-height: 85px;
     position: absolute;
     font-size: 72px;
 }
@@ -215,7 +215,7 @@ body {
 .about__text {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 95px;
 }
 
 .about__text p {
@@ -228,7 +228,7 @@ body {
 
 .onschool {
     background-color: #f8f8f8;
-    padding-top: 177px;
+    padding-top: 156px;
 }
 
 .onschool__inner {
@@ -237,8 +237,7 @@ body {
 }
 
 .onschool__items {
-    display: flex;
-    padding-top: 101px;
+    padding-top: 96px;
 }
 
 .onschool__title {
@@ -266,19 +265,22 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 358px;
+    text-align: left;
+    letter-spacing: 0.6px;
 }
 
 .onschool__subtitle {
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
-    max-width: 200px;
-    margin-bottom: 19px;
+    max-width: 185px;
+    margin-bottom: 6px;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     align-items: center;
+    letter-spacing: 1.5px;
 }
 
 .sun::before {
@@ -314,22 +316,26 @@ body {
 
 .ranking {
     background-color: #F8F8F8;
-    padding: 103px 0 200px;
+    padding-top: 103px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
 }
 
+.ranking__stat {
+    display: flex;
+    justify-content: space-between;
+}
+
 .stat {
     display: flex;
-    flex-flow: row wrap;
-    max-width: 300px;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .stat__inner {
     display: flex;
-    max-width: 300px;
 }
 
 .stat__subtile {
@@ -349,6 +355,8 @@ body {
 .stat__numb {
     font-size: 24px;
     font-weight: 400;
+    min-width: 43px;
+    display: flex;
 }
 
 .ranking__text {
@@ -358,47 +366,46 @@ body {
 }
 
 .ranking__text p:first-child {
-    margin-bottom: 35px;
+    margin-bottom: -24px;
 }
 
 
 /* surfer */
 
 .surfer {
-    background-image: url(../images/surfer.jpg);
-    padding: 200px 0 145px 0;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top right;
+    padding-top: 150px;
+    max-height: 850px;
+    margin-bottom: 150px;
 }
 
 
-/*не удалось спозиционировать картинку*/
+/*не удалось спозиционировать картинку через absolute*/
+
+.surfer__bg {
+    background-image: url(../images/surfer.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 50% 100%; */
+    max-width: 960px;
+    min-height: 850px;
+    /* background-position: top right; */
+    padding-top: 180px;
+    margin-bottom: 200px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
 
 .surfer__inner {
     width: 49%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: space-between;
+    padding-top: 193px;
 }
 
 .surfer__title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1;
-    color: #01353e;
-    text-transform: uppercase;
-    padding: 200px 0 105px;
-}
-
-.surfer__title::after {
-    content: "/";
-    color: #00b2a0;
-    max-width: 48px;
-    max-height: 85px;
-    position: absolute;
-    font-weight: 600;
-    font-size: 72px;
+    margin-bottom: 100px;
 }
 
 .surfer__text p {
@@ -410,63 +417,57 @@ body {
 /* .gallery */
 
 .gallery {
-    display: block;
+    padding-top: 192px;
 }
 
 .gallery__top {
-    padding-top: 200px 0 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .gallery__title {
-    margin-bottom: 105px;
     font-weight: 600;
     font-size: 48px;
-    line-height: 1;
-    color: #01353e;
     text-transform: uppercase;
-    padding-top: 200px;
-}
-
-.gallery__title::after {
-    content: "/";
-    color: #00b2a0;
-    max-width: 48px;
-    max-height: 85px;
-    position: absolute;
-    font-weight: 600;
-    font-size: 72px;
+    margin-bottom: 206px;
 }
 
 .gallery__inner {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.gallery__btn:hover {
+.gallery__btn-mix:hover,
+.gallery__add:hover {
     color: #00b2a0;
-    transform: scale(1.2);
     transition: transform 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.gallery__btn {
-    margin-right: 26px;
+
+/* .gallery__btn-mix {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+} */
+
+.gallery__btn-mix:first-child {
+    margin-right: 6px;
+}
+
+.gallery__btn-mix {
     text-transform: uppercase;
     font-size: 24px;
-    margin-bottom: 50px;
     border: none;
     position: relative;
     cursor: pointer;
     background: transparent;
     outline: transparent;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 25px;
+    font-weight: 400;
 }
 
-.gallery__btn:after {
+.gallery__btn-mix:after,
+.gallery__add::after {
     content: "";
     background-color: #00b2a0;
     transition: width 0.3s ease-in-out;
@@ -475,10 +476,10 @@ body {
     width: 1px;
     left: 50%;
     position: absolute;
-    border-bottom: 1px solid #00b2a0;
 }
 
-.gallery__btn:focus:after {
+.gallery__btn-mix:focus:after,
+.gallery__add:focus::after {
     width: 50%;
 }
 
@@ -490,10 +491,24 @@ body {
     padding: 15px;
 }
 
+.gallery__btn-add {
+    padding-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery__add {
     display: flex;
     text-align: center;
     text-transform: uppercase;
+    justify-content: center;
+    min-width: 350px;
+    min-height: 70px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    outline: transparent;
 }
 
 .gallery__content {
@@ -511,6 +526,7 @@ body {
     padding: 20px;
     width: 100%;
     height: auto;
+    outline: transparent;
 }
 
 .gallery__mix:hover {
@@ -523,7 +539,8 @@ body {
 
 .blockquote__cite {
     max-height: 200px;
-    padding-top: 200px;
+    padding-top: 270px;
+    margin-bottom: 125px;
 }
 
 .blockquote {
@@ -574,25 +591,20 @@ body {
     fill: #00b2a0;
 }
 
-
-/* не работает? */
-
-
-/* .gallery__video-link:focus path {
+.gallery__video-link:focus path {
     fill: tomato;
-}  */
+}
 
-
-/* .gallery__video-link:active path {
+.gallery__video-link:active path {
     fill: #0048ff;
-}  */
+}
 
 
 /* .gallery__numbers */
 
 .gallery__numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 200px 0 221px;
 }
 
@@ -617,5 +629,5 @@ body {
 }
 
 .gallery__subtitle:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 80px;
 }
