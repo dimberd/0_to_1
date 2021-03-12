@@ -43,7 +43,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+    background: linear-gradient(rgb(1, 53, 62) 0%, rgba(51, 51, 51, 0.596) 31.64%, rgba(51, 51, 51, 0.224) 74.35%, rgba(51, 51, 51, 0) 99.87%);
 }
 
 .container {
@@ -84,7 +84,7 @@ body {
     transition: transform 0.6s;
 }
 
-.header__img:hover {
+.header__img::hover {
     transform: scale(1.2);
 }
 
@@ -112,10 +112,10 @@ body {
     outline: transparent;
 }
 
-.menu__link:after {
+.menu__link::after {
     content: "";
     background-color: #00b2a0;
-    transition: width 0.3s ease-in-out;
+    transition: width 3.3s;
     transform: translateX(-50%);
     height: 1px;
     width: 1px;
@@ -127,13 +127,14 @@ body {
     border-bottom: 1px solid #00b2a0;
 }
 
-.menu__link:hover:after,
-.menu__link:focus:after {
+.menu__link:hover::after,
+.menu__link:focus::after {
     width: 100%;
 }
 
 .header__mouse svg {
     transition: transform 0.4s ease;
+    margin-bottom: 92px;
 }
 
 .header__mouse svg:hover {
@@ -183,6 +184,7 @@ body {
 
 .about__title {
     padding-top: 187px;
+    margin-bottom: 95px;
 }
 
 .title {
@@ -203,7 +205,6 @@ body {
 .about__text {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 95px;
     color: #242121;
 }
 
@@ -219,22 +220,14 @@ body {
     background-color: #f8f8f8;
 }
 
-.onschool__inner {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
 .onschool__title {
     font-weight: 600;
     font-size: 48px;
     text-transform: uppercase;
     position: relative;
     padding-top: 165px;
-}
-
-.onschool__items {
-    padding-top: 101px;
+    margin-bottom: 101px;
+    text-align: center;
 }
 
 .onschool__title::after {
@@ -252,9 +245,9 @@ body {
 }
 
 .onschool__content {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     max-width: 358px;
     text-align: left;
     letter-spacing: 0.6px;
@@ -299,9 +292,9 @@ body {
 }
 
 
-/* ranking */
+/* stat */
 
-.ranking {
+.stat {
     padding-top: 103px;
     display: flex;
     justify-content: space-between;
@@ -310,7 +303,7 @@ body {
     margin-bottom: 200px;
 }
 
-.ranking__stat {
+.stat__ranking {
     display: flex;
     justify-content: space-between;
 }
@@ -318,12 +311,14 @@ body {
 .stat {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 .stat__inner {
     display: flex;
     max-height: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .stat__subtile {
@@ -347,13 +342,13 @@ body {
     display: flex;
 }
 
-.ranking__text {
+.stat__text {
     max-width: 600px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
 
-.ranking__text p {
+.stat__text p {
     margin-bottom: 30px;
 }
 
