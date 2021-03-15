@@ -690,19 +690,65 @@ body {
 }
 
 .pricing__title {
-    margin-bottom: 257px;
+    padding-top: 194px;
+    margin-bottom: 256px;
 }
 
-.pricing__bold-text {}
+.pricing__bold-text,
+.pricing__num {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 56px;
+    text-align: center;
+}
 
-.pricing__item {}
+.pricing__item:not(:last-child) {
+    margin-right: 60px;
+}
 
-.pricing__items {}
+.pricing__item {
+    max-width: 360px;
+}
 
-.pricing__num {}
+.pricing__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 271px;
+    background-color: #FFFFFF;
+}
 
-.pricing__text {}
+.pricing__text {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
 
-.pricing__title {}
+.pricing__num {
+    padding-top: 33px;
+}
 
-.title {}
+.pricing__num:nth-child(4n) {
+    padding-top: 110px;
+}
+
+
+/* знак $ по центру не вышло сделать
+- можно тут обЪяснить? (думал менять структуру html) */
+
+span {
+    font-size: 18px;
+    align-items: center;
+}
+
+
+/* .map */
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__position {
+    padding-top: 142px;
+    margin-bottom: 200px;
+}
