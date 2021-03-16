@@ -382,7 +382,7 @@ body {
 }
 
 .gallery__btn-mix:hover,
-.gallery__add:hover {
+.btn:hover {
     color: #00b2a0;
     transition: transform 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
@@ -404,7 +404,7 @@ body {
 }
 
 .gallery__btn-mix::after,
-.gallery__add::after {
+.btn::after {
     content: "";
     background-color: #00b2a0;
     transition: width 0.3s ease-in-out;
@@ -416,26 +416,14 @@ body {
 }
 
 .gallery__btn-mix:focus::after,
-.gallery__add:focus::after {
+.btn:focus::after {
     width: 50%;
 }
 
 .btn {
     border: 1px solid #C4C4C4;
-    cursor: pointer;
     font-size: 24px;
-    background: #FFFFFF;
     padding: 15px;
-}
-
-.gallery__btn-add {
-    padding-top: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery__add {
     display: flex;
     text-align: center;
     text-transform: uppercase;
@@ -446,6 +434,13 @@ body {
     cursor: pointer;
     background: transparent;
     outline: transparent;
+}
+
+.gallery__btn-add {
+    padding-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery__content {
@@ -650,6 +645,9 @@ body {
     transform: translateY(-2px);
 }
 
+
+/* .team */
+
 .team__title {
     margin-bottom: 212px;
     padding-top: 200px;
@@ -751,4 +749,62 @@ span {
 .map__position {
     padding-top: 142px;
     margin-bottom: 200px;
+}
+
+
+/* .connection */
+
+.connection {
+    margin-bottom: 200px;
+}
+
+.connection__form {
+    padding-top: 240px;
+    max-width: 569px;
+}
+
+.connection__form input,
+textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #DADADA;
+    font-size: 18px;
+    font-weight: 400;
+    color: #00B2A0;
+    padding: 0 0 18px;
+    margin-bottom: 29px;
+}
+
+textarea {
+    min-height: 156px;
+    margin-bottom: 73px;
+}
+
+input:nth-child(2n) {
+    margin-bottom: 48px;
+}
+
+.connection__text {
+    max-width: 400px;
+}
+
+.connection__social {}
+
+
+/* .footer */
+
+.footer {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 10px 0;
+}
+
+.footer__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }

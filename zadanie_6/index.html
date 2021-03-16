@@ -293,9 +293,7 @@
 
         <!-- /* .slider */ -->
         <section class="slider">
-            <div class="slider__title">
-                <h2 class="title">блог</h2>
-            </div>
+            <h2 class="slider__title title">блог</h2>
             <div class="slider__blog" style="background-image: url(images/slider/slider.jpg);">
                 <div class="slider__item">
                     <div class="slider__content">
@@ -400,11 +398,10 @@
             </div>
             </div>
         </section>
+        <!-- /* .team */ -->
         <section class="team">
             <div class="container">
-                <div class="team__title ">
-                    <h2 class="title">наша команда</h2>
-                </div>
+                <h2 class="team__title title">наша команда</h2>
                 <div class="team__content">
                     <div class="team__items">
                         <img class="team__img" src="images/team/mike.jpg" alt="главный инстуктор">
@@ -428,9 +425,7 @@
         <!-- /* .pricing */ -->
         <section class="pricing">
             <div class="container">
-                <div class="pricing__title">
-                    <h2 class="title">пакеты услуг</h2>
-                </div>
+                <h2 class="pricing__title title">пакеты услуг</h2>
                 <div class="pricing__items">
                     <ul class="pricing__item">
                         <li class="pricing__bold-text">Стандарт</li>
@@ -474,22 +469,51 @@
         <div class="map">
             <img class="map__position" src="images/map.jpg" alt="карта с обозначением места положения">
         </div>
+
+        <!-- /* .connection */ -->
         <section class="connection">
             <div class="container">
-                <h2 class="title">оставить заявку</h2>
-                <form class="form">
-                    <input type="text" class="text">
-                    <input type="text" class="text">
-                    <textarea></textarea>
-                    <button type="submit"> </button>
-                </form>
-            </div>
+                <h2 class="connection__tiltle title">оставить заявку</h2>
+                <form class="connection__form">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
 
+                    <!-- (не получилось правильно разместить) -->
+
+                    <textarea placeholder="Оставьте сообщение, и мы 
+                    свяжемся с Вами в ближайшее 
+                    время"></textarea>
+                    <button type="submit" class="btn">отправить</button>
+                </form>
+                <div class="connection__text">
+                    <p>
+                        Есть вопрос? Вы можете связаться с нами:
+                    </p>
+                    <a class="chat" href="#">WhatsApp</a>
+                    <a class="chat" href="#">Viber</a>
+                    <a class="chat" href="#">Telegram</a>
+                    <a class="phone" href="tel:>+34674863788">+3 467 486-37-88</a>
+                    <adres class="adres">
+                        Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
+                    </adres>
+                </div>
+                <ul class="connection__social">
+                    <li class="connection__list"><a class="connection__link" href="#">instagram</a></li>
+                    <li class="connection__list"><a class="connection__link" href="#">facebook</a></li>
+                    <li class="connection__list"><a class="connection__link" href="#">youtube</a></li>
+                </ul>
+            </div>
         </section>
 
-
+        <!-- /* .footer */ -->
+        <footer class="footer">
+            <div class="footer__logo" style="background-image: url(images/footer.jpg);">
+                <a class="footer__img" href="#">
+                    <img src="images/logo.svg" alt="логотип">
+                </a>
+            </div>
+        </footer>
     </main>
-
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="js/mixitup.min.js"></script>
