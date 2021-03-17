@@ -15,7 +15,7 @@ body {
     line-height: 1.3;
     letter-spacing: 0.6px;
     font-style: normal;
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
     color: #01353E;
 }
 
@@ -177,12 +177,10 @@ body {
 /* about */
 
 .about {
-    background-color: #fff;
-    margin-bottom: 199px;
+    padding: 184px 0 190px;
 }
 
 .about__title {
-    padding-top: 187px;
     margin-bottom: 95px;
 }
 
@@ -212,25 +210,28 @@ body {
     margin: 0 120px 30px 0;
 }
 
-
-/* onschool */
-
-.onschool {
-    background-color: #f8f8f8;
-    margin-bottom: 170px;
+p:nth-child(n+7):nth-child(-n+8) {
+    margin-bottom: 0;
 }
 
-.onschool__title {
+
+/* school */
+
+.school {
+    background-color: #f8f8f8;
+    padding: 201px 0 170px;
+}
+
+.school__title {
     font-weight: 600;
     font-size: 48px;
     text-transform: uppercase;
     position: relative;
-    padding-top: 165px;
     margin-bottom: 101px;
     text-align: center;
 }
 
-.onschool__title::after {
+.school__title::after {
     content: "/";
     color: #00b2a0;
     width: 48px;
@@ -239,13 +240,13 @@ body {
     font-size: 72px;
 }
 
-.onschool__items {
+.school__items {
     display: flex;
     justify-content: space-between;
     margin-bottom: 98px;
 }
 
-.onschool__content {
+.school__content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -254,7 +255,7 @@ body {
     letter-spacing: 0.6px;
 }
 
-.onschool__subtitle {
+.school__subtitle {
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
@@ -262,7 +263,6 @@ body {
     margin-bottom: 6px;
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -273,15 +273,15 @@ body {
     max-height: 50px;
 }
 
-.sun::before {
+.school__subtitle--sun::before {
     content: url(../images/sun.svg);
 }
 
-.airplane::before {
+.school__subtitle--airplane::before {
     content: url(../images/airplane.svg);
 }
 
-.wawe::before {
+.school__subtitle--wawe::before {
     content: url(../images/wawe.svg);
 }
 
@@ -388,7 +388,7 @@ body {
 }
 
 .gallery__btn-mix:first-child {
-    margin-right: 6px;
+    margin-right: 25px;
 }
 
 .gallery__btn-mix {
@@ -423,13 +423,12 @@ body {
 .btn {
     border: 1px solid #C4C4C4;
     font-size: 24px;
-    padding: 15px;
+    padding: 18px;
     display: flex;
     text-align: center;
     text-transform: uppercase;
     justify-content: center;
     min-width: 350px;
-    min-height: 70px;
     position: relative;
     cursor: pointer;
     background: transparent;
@@ -478,8 +477,7 @@ body {
     justify-content: flex-end;
     flex-direction: column;
     max-height: 200px;
-    padding-top: 270px;
-    margin-bottom: 259px;
+    padding: 276px 0 260px;
     background-color: #F8F8F8;
 }
 
@@ -497,7 +495,7 @@ body {
 /* .video */
 
 .video {
-    padding-top: 200px;
+    padding: 0 0 195px;
 }
 
 .video__link {
@@ -533,8 +531,7 @@ body {
 .numbers {
     display: flex;
     justify-content: space-around;
-    padding-top: 200px;
-    margin-bottom: 198px;
+    padding: 0 0 200px;
 }
 
 .numbers__item {
@@ -601,7 +598,7 @@ body {
 .slider-link {
     color: #FFFFFF;
     margin-right: 360px;
-    padding: 314px 0 351px;
+    padding: 315px 0 351px;
 }
 
 .slider__item-text {
@@ -660,7 +657,9 @@ body {
 }
 
 .team__items {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 204px;
 }
 
@@ -732,10 +731,11 @@ body {
 /* знак $ по центру не вышло сделать
 - можно тут обЪяснить? (думал менять структуру html) */
 
-span {
+
+/* span {
     font-size: 18px;
     align-items: center;
-}
+} */
 
 
 /* .map */
@@ -755,16 +755,26 @@ span {
 /* .connection */
 
 .connection {
-    margin-bottom: 200px;
+    padding: 200px 0 200px;
+}
+
+.connection__title {
+    margin-bottom: 243px;
+}
+
+.connection__inner {
+    display: flex;
+    justify-content: space-between;
 }
 
 .connection__form {
     padding-top: 240px;
     max-width: 569px;
+    width: 100%;
 }
 
-.connection__form input,
-textarea {
+.connection__form,
+.connection__info {
     border: none;
     display: block;
     width: 100%;
@@ -776,7 +786,7 @@ textarea {
     margin-bottom: 29px;
 }
 
-textarea {
+.connection__info textarea {
     min-height: 156px;
     margin-bottom: 73px;
 }

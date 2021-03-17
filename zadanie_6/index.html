@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAWE | Школа серфинга</title>
+    <title>WAWE | домашняя страница</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
@@ -106,26 +106,25 @@
             </div>
         </section>
 
-        <!-- /* onschool */ -->
-        <section class="onschool">
+        <!-- /* school */ -->
+        <section class="school">
             <div class="container">
-                <h2 class="onschool__title title">в школе вы получите</h2>
-                <div class="onschool__items">
-                    <div class="onschool__content">
-                        <h3 class="onschool__subtitle">проживание
-                            <span class="sun"></span>
+                <h2 class="school__title title">в школе вы получите</h2>
+                <div class="school__items">
+                    <div class="school__content">
+                        <h3 class="school__subtitle school__subtitle--sun">проживание
                         </h3>
-                        <div class="onschool__text">
+                        <div class="school__text">
                             <p>
                                 Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и бесплатный Wi-Fi. Из верхней террасы открывается вид на океан. Расстояние до центра города 15 мин.
                             </p>
                         </div>
                     </div>
-                    <div class="onschool__content">
-                        <h3 class="onschool__subtitle">перелет и страховку
-                            <span class="airplane"></span>
+                    <div class="school__content">
+                        <h3 class="school__subtitle school__subtitle--airplane">перелет и страховку
+
                         </h3>
-                        <div class="onschool__text">
+                        <div class="school__text">
                             <p>
                                 Все участники программы застрахованы страховой компанией Allianz.
                             </p>
@@ -134,11 +133,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="onschool__content">
-                        <h3 class="onschool__subtitle">обучение и экипировку
-                            <span class="wawe"></span>
+                    <div class="school__content">
+                        <h3 class="school__subtitle school__subtitle--wawe">обучение и экипировку
                         </h3>
-                        <div class="onschool__text">
+                        <div class="school__text">
                             <p>
                                 Все оборудование и экипировка известных производителей и предоставляется на весь курс программы. Тренировочный процесс начинается с определения вашего уровня катания
                             </p>
@@ -217,15 +215,16 @@
                     </h2>
                 </div>
                 <ul class="gallery__inner">
-                    <li class="gallery__list"> <button type=submit class="gallery__btn-mix" data-filter="all">все</button>
+                    <li class="gallery__list"> <button type="submit" class="gallery__btn-mix" data-filter="all">все</button>
                     </li>
-                    <li class="gallery__list"> <button type=submit class="gallery__btn-mix" data-filter=".gallery__mix-a">туристы</button>
+                    <li class="gallery__list"> <button type="submit" class="gallery__btn-mix" data-filter=".gallery__mix-a">туристы</button>
                     </li>
-                    <li class="gallery__list"> <button type=submit class="gallery__btn-mix" data-filter=".gallery__mix-b">природа</button>
+                    <li class="gallery__list"> <button type="submit" class="gallery__btn-mix" data-filter=".gallery__mix-b">природа</button>
                     </li>
-                    <li class="gallery__list"> <button type=submit class="gallery__btn-mix" data-filter=".gallery__mix-c">профи</button>
+                    <li class="gallery__list"> <button type="submit" class="gallery__btn-mix" data-filter=".gallery__mix-c">профи</button>
                     </li>
                 </ul>
+
                 <div class="gallery__item">
                     <ul class="gallery__content">
                         <li class="gallery__mix mix gallery__mix-a">
@@ -262,8 +261,8 @@
 
         </div>
         <!-- /* .video */ -->
-        <div class="container">
-            <div class="gallery__video">
+        <div class="video">
+            <div class="container">
                 <a class="video__link" data-fancybox href="https://youtu.be/Tl0BsFbInFw" style="background-image: url(images/video.jpg);">
                     <svg width="75" height="88" viewBox="0 0 75 88" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M75 44L0 87.3013L0 0.69873L75 44Z" fill="#373A39" />
@@ -396,27 +395,33 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+
         <!-- /* .team */ -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title title">наша команда</h2>
                 <div class="team__content">
-                    <div class="team__items">
+                    <div class="team__inner">
                         <img class="team__img" src="images/team/mike.jpg" alt="главный инстуктор">
-                        <h3 class="team__name">Mike</h3>
-                        <h4 class="team__profession">Главный инстуктор</h4>
+                        <div class="team__items">
+                            <span class="team__name">Mike</span>
+                            <span class="team__profession">Главный инстуктор</span>
+                        </div>
                     </div>
-                    <div class="team__items">
+                    <div class="team__inner">
                         <img class="team__img" src="images/team/mary.jpg" alt="инстуктор">
-                        <h3 class="team__name">Mary</h3>
-                        <h4 class="team__profession">Инстуктор</h4>
+                        <div class="team__items">
+                            <span class="team__name">Mary</span>
+                            <span class="team__profession">Инстуктор</span>
+                        </div>
                     </div>
-                    <div class="team__items">
+                    <div class="team__inner">
                         <img class="team__img" src="images/team/olga.jpg" alt="инстуктор">
-                        <h3 class="team__name">Ольга</h3>
-                        <h4 class="team__profession">Инстуктор</h4>
+                        <div class="team__items">
+                            <span class="team__name">Ольга</span>
+                            <span class="team__profession">Инстуктор</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -426,42 +431,48 @@
         <section class="pricing">
             <div class="container">
                 <h2 class="pricing__title title">пакеты услуг</h2>
-                <div class="pricing__items">
-                    <ul class="pricing__item">
-                        <li class="pricing__bold-text">Стандарт</li>
-                        <li class="pricing__text">Проживание на вилле 6 ночей </li>
-                        <li class="pricing__text">Номер категории стандарт</li>
-                        <li class="pricing__text">Экипировка для обучения</li>
-                        <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
-                        <li class="pricing__text">Страховка</li>
-                        <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
-                        <li class="pricing__num">450<span>$</span></li>
-                    </ul>
-                    <ul class="pricing__item">
-                        <li class="pricing__bold-text">Все включено</li>
-                        <li class="pricing__text">Проживание на вилле 6 ночей</li>
-                        <li class="pricing__text">Номер категории стандарт</li>
-                        <li class="pricing__text">Экипировка для обучения</li>
-                        <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
-                        <li class="pricing__text">Страховка</li>
-                        <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
-                        <li class="pricing__text">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
-                        <li class="pricing__text">Завтраки на вилле</li>
-                        <li class="pricing__num">950<span>$</span></li>
-                    </ul>
-                    <ul class="pricing__item">
-                        <li class="pricing__bold-text">Профи</li>
-                        <li class="pricing__text">Проживание на вилле 6 ночей</li>
-                        <li class="pricing__text">Номер категории стандарт</li>
-                        <li class="pricing__text">Экипировка для обучения</li>
-                        <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
-                        <li class="pricing__text">Страховка</li>
-                        <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
-                        <li class="pricing__text">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
-                        <li class="pricing__text">Завтраки на вилле</li>
-                        <li class="pricing__num">1450<span>$</span></li>
-                    </ul>
-                </div>
+                <ul class="pricing__items">
+                    <li class="pricing__inner">
+                        <h3 class="pricing__bold-text">Стандарт</h3>
+                        <ul class="pricing__item">
+                            <li class="pricing__text">Проживание на вилле 6 ночей </li>
+                            <li class="pricing__text">Номер категории стандарт</li>
+                            <li class="pricing__text">Экипировка для обучения</li>
+                            <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
+                            <li class="pricing__text">Страховка</li>
+                            <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
+                        </ul>
+                        <span class="pricing__num">450<span>$</span>
+                    </li>
+                    <li class="pricing__inner">
+                        <h3 class="pricing__bold-text">Все включено</h3>
+                        <ul class="pricing__item">
+                            <li class="pricing__text">Проживание на вилле 6 ночей</li>
+                            <li class="pricing__text">Номер категории стандарт</li>
+                            <li class="pricing__text">Экипировка для обучения</li>
+                            <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
+                            <li class="pricing__text">Страховка</li>
+                            <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
+                            <li class="pricing__text">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                            <li class="pricing__text">Завтраки на вилле</li>
+                        </ul>
+                        <span class="pricing__num">950<span>$</span></span>
+                    </li>
+                    <li class="pricing__inner">
+                        <h3 class="pricing__bold-text">Профи</h3>
+                        <ul class="pricing__item">
+                            <li class="pricing__text">Проживание на вилле 6 ночей</li>
+                            <li class="pricing__text">Номер категории стандарт</li>
+                            <li class="pricing__text">Экипировка для обучения</li>
+                            <li class="pricing__text">Обучение серфингу 5 тренировок по 2 часа</li>
+                            <li class="pricing__text">Страховка</li>
+                            <li class="pricing__text">Вечеринка с угощениями и дискотекой</li>
+                            <li class="pricing__text">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                            <li class="pricing__text">Завтраки на вилле</li>
+                        </ul>
+                        <span class="pricing__num">1450<span>$</span></span>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -473,30 +484,34 @@
         <!-- /* .connection */ -->
         <section class="connection">
             <div class="container">
-                <h2 class="connection__tiltle title">оставить заявку</h2>
-                <form class="connection__form">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Телефон">
+                <h2 class="connection__title title">оставить заявку</h2>
+                <div class="connection__inner">
+                    <form class="connection__form">
+                        <input class="connection__info" type="text" placeholder="Имя">
+                        <input class="connection__info" type="text" placeholder="Телефон">
 
-                    <!-- (не получилось правильно разместить) -->
+                        <!-- (не получилось правильно разместить) -->
 
-                    <textarea placeholder="Оставьте сообщение, и мы 
+                        <textarea class="connection__info" placeholder="Оставьте сообщение, и мы 
                     свяжемся с Вами в ближайшее 
                     время"></textarea>
-                    <button type="submit" class="btn">отправить</button>
-                </form>
-                <div class="connection__text">
-                    <p>
-                        Есть вопрос? Вы можете связаться с нами:
-                    </p>
-                    <a class="chat" href="#">WhatsApp</a>
-                    <a class="chat" href="#">Viber</a>
-                    <a class="chat" href="#">Telegram</a>
-                    <a class="phone" href="tel:>+34674863788">+3 467 486-37-88</a>
-                    <adres class="adres">
-                        Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
-                    </adres>
+                        <button type="submit" class="btn">отправить</button>
+                    </form>
+                    <div class="connection__text">
+                        <p>
+                            Есть вопрос? Вы можете связаться с нами:
+                        </p>
+                        <a class="chat" href="#">WhatsApp</a>
+                        <a class="chat" href="#">Viber</a>
+                        <a class="chat" href="#">Telegram</a>
+                        <a class="phone" href="tel:>+34674863788">+3 467 486-37-88</a>
+                        <adres class="adres">
+                            Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
+                        </adres>
+                    </div>
                 </div>
+
+
                 <ul class="connection__social">
                     <li class="connection__list"><a class="connection__link" href="#">instagram</a></li>
                     <li class="connection__list"><a class="connection__link" href="#">facebook</a></li>
