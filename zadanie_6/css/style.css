@@ -725,7 +725,6 @@ p:nth-child(n+7):nth-child(-n+8) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #FFFFFF;
 }
 
 .pricing__inner {
@@ -795,9 +794,6 @@ p:nth-child(n+7):nth-child(-n+8) {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.map__position {
     padding-top: 226px;
 }
 
@@ -805,7 +801,7 @@ p:nth-child(n+7):nth-child(-n+8) {
 /* .connection */
 
 .connection {
-    padding: 200px 0 200px;
+    padding: 200px 0 191px;
 }
 
 .connection__title {
@@ -821,10 +817,7 @@ p:nth-child(n+7):nth-child(-n+8) {
 }
 
 .connection__form {
-    width: 569px;
-    min-height: 317px;
-    display: flex;
-    flex-direction: column;
+    min-width: 569px;
 }
 
 .connection__info-text {
@@ -863,7 +856,7 @@ p:nth-child(n+7):nth-child(-n+8) {
 } */
 
 .connection__text {
-    width: 600px;
+    min-width: 600px;
     height: 460px;
     font-size: 24px;
     text-decoration: none;
@@ -871,13 +864,12 @@ p:nth-child(n+7):nth-child(-n+8) {
     flex-wrap: wrap;
     align-items: center;
     background-color: #F8F8F8;
-    margin-bottom: 200px;
 }
 
 .connection__question,
 .connection__chat,
 .adres {
-    margin: 0 0 60px 68px;
+    margin: 0 0 55px 83px;
 }
 
 .connection__question {
@@ -903,20 +895,36 @@ p:nth-child(n+7):nth-child(-n+8) {
     justify-content: center;
 }
 
+.send__btn {
+    margin-bottom: 194px;
+}
+
+.connection__link {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    color: #242121;
+}
+
+.connection__link:hover {
+    color: #00b2a0;
+    transition: transform 0.3s ease;
+}
+
+.connection__link:first-child {
+    margin-right: 10px;
+}
+
 
 /* .footer */
 
-.footer {
+.footer__logo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 200px 10px 0;
-}
-
-.footer__img {
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
 }
