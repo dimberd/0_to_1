@@ -83,7 +83,7 @@ body {
     transition: transform 0.6s;
 }
 
-.header__img::hover {
+.header__img:hover {
     transform: scale(1.2);
 }
 
@@ -500,7 +500,7 @@ p:nth-child(n+7):nth-child(-n+8) {
     flex-direction: column;
     min-height: 200px;
     background-color: #F8F8F8;
-    margin-bottom: 197px;
+    margin-bottom: 200px;
 }
 
 .blockquote__author {
