@@ -690,7 +690,6 @@ p:nth-child(n+7):nth-child(-n+8) {
 .pricing__items {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .pricing__inner {
@@ -703,16 +702,15 @@ p:nth-child(n+7):nth-child(-n+8) {
 
 .pricing__bold-text {
     font-size: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     text-align: center;
-    padding-top: 47px;
+    padding-top: 43px;
     color: #01353E;
     font-weight: 400;
 }
 
 .pricing__num {
     font-size: 36px;
-    padding-top: 43px;
     text-align: center;
 }
 
@@ -725,7 +723,7 @@ p:nth-child(n+7):nth-child(-n+8) {
 
 .pricing__num-a {
     font-size: 36px;
-    padding-top: 118px;
+    padding-top: 75px;
     text-align: center;
     display: flex;
     height: 100%;
@@ -776,34 +774,36 @@ p:nth-child(n+7):nth-child(-n+8) {
 .connection__inner {
     display: flex;
     justify-content: center;
-    margin-bottom: -65px;
     font-size: 18px;
     font-weight: 400;
 }
 
-.connection__form {
-    min-width: 569px;
+.form {
+    max-width: 569px;
+    margin-right: 31px;
 }
 
-.connection__info-text {
+.form__text {
     border: none;
     display: block;
     max-width: 260px;
     min-height: 175px;
     border: none;
-    width: 100%;
     border-bottom: 2px solid #DADADA;
     color: #00B2A0;
     padding-top: 18px;
+    resize: none;
+    width: 100%;
 }
 
-.connection__info {
+.form__input {
     border: none;
     width: 100%;
     border-bottom: 2px solid #DADADA;
     padding: 0 0 5px;
     margin-bottom: 41px;
     color: #00B2A0;
+    resize: none;
 }
 
 .connection__text {
@@ -812,6 +812,7 @@ p:nth-child(n+7):nth-child(-n+8) {
     font-size: 24px;
     text-decoration: none;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: #F8F8F8;
@@ -824,7 +825,8 @@ p:nth-child(n+7):nth-child(-n+8) {
 }
 
 .connection__question {
-    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat,

@@ -527,25 +527,34 @@
             <div class="container">
                 <h2 class="connection__title title">оставить заявку</h2>
                 <div class="connection__inner">
-                    <form class="connection__form">
-                        <input class="connection__info" type="text" placeholder="Имя">
-                        <input class="connection__info" type="text" placeholder="Телефон">
-                        <textarea class="connection__info-text" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+                    <form class="form">
+                        <input class="form__input" type="text" name="name" placeholder="Имя">
+                        <input class="form__input" name="massege" type="tel" name="phone" placeholder="Телефон">
+                        <textarea class="form__input" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+                        <button type="submit" class="btn">отправить</button>
                     </form>
+
                     <div class="connection__text">
-                        <span class="connection__question">Есть вопрос? <br> Вы можете связаться с нами:</span>
+                        <div class="connection__question">
+                            <p>
+                                Есть вопрос?
+                            </p>
+                            <p>
+                                Вы можете связаться с нами:
+                            </p>
+                        </div>
                         <div class="connection__chat">
                             <a class="chat" href="#">WhatsApp,</a>
                             <a class="chat" href="#">Viber,</a>
                             <a class="chat" href="#">Telegram</a>
                             <a class="phone" href="tel:+34674863788">+3 467 486-37-88</a>
                         </div>
-                        <adres class="adres">
-                            Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
-                        </adres>
+                        <address class="address">
+              Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660
+            </address>
                     </div>
                 </div>
-                <button type="submit" class="send__btn btn">отправить</button>
+
                 <ul class="connection__social">
                     <li class="connection__list">
                         <a class="connection__link" href="#">instagram</a>
