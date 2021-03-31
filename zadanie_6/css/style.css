@@ -54,6 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        /* justify-content: center; */
     }
     
     .header__inner {
@@ -422,7 +423,6 @@
     }
     
     .gallery__content {
-        margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -848,13 +848,38 @@
         background-color: #00B2A0;
     }
     
-    @media only screen and (max-width: 980px)and (orientation: landscape) {
-        .container {
-            min-width: 50%;
-            max-width: 67%;
-        }
+    @media (max-width: 992px) {
         .header__title {
             font-size: 120px;
+        }
+        .header__subtitle {
+            font-size: 18px;
+        }
+        .menu__link {
+            font-size: 18px;
+        }
+        .header__img {
+            margin-right: 40px;
+        }
+        .header__content {
+            max-width: 400px;
+        }
+        .header__top {
+            display: flex;
+            justify-content: center;
+        }
+        .menu {
+            display: none;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+    
+    @media only (max-width: 768px) {
+        .header__title {
+            font-size: 100px;
         }
         .header__subtitle {
             font-size: 14px;
@@ -863,10 +888,43 @@
             font-size: 14px;
         }
         .header__content {
-            max-width: 500px;
+            max-width: 390px;
         }
-        .menu__list:not(:last-child) {
-            margin-right: 10px;
+        .header__img {
+            margin-right: 30px;
+        }
+        .header__content {
+            max-width: 400px;
+        }
+        .header__top {
+            display: flex;
+            justify-content: center;
         }
     }
-    /* @media only screen and (max-width: 851px)and (orientation: landscape) {} */
+    
+    @media (max-width: 576px) {
+        .header__title {
+            font-size: 100px;
+        }
+        .header__subtitle {
+            font-size: 14px;
+        }
+        .menu__link {
+            font-size: 14px;
+        }
+        .header__content {
+            max-width: 390px;
+        }
+        .header__img {
+            margin-right: 30px;
+        }
+        .header__content {
+            max-width: 400px;
+        }
+        .header__top {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width: 360px) {}
