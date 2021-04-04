@@ -83,7 +83,7 @@ body {
     display: none;
 }
 
-.menu {
+.menu__box {
     display: flex;
     justify-content: space-between;
 }
@@ -97,11 +97,11 @@ body {
     transform: scale(1.2);
 }
 
-.menu__list {
+.menu__item {
     display: flex;
 }
 
-.menu__list:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 45px;
 }
 
@@ -902,33 +902,28 @@ p:nth-child(n+7):nth-child(-n+8) {
     .header__content {
         max-width: 600px;
     }
-    .header__top {
+    .header__nav {
         justify-content: center;
     }
     .header::before {
         height: 30vh;
     }
-    .menu {
-        display: block;
-    }
-    #menuToggle {
+    /* hamburger-menu */
+    .hamburger-menu {
         display: block;
         position: relative;
-        top: 65px;
-        right: 460px;
+        top: 0;
+        left: 800px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
     }
-    #menuToggle li {
+    .hamburger-menu a {
         text-decoration: none;
         color: #232323;
         transition: color 0.3s ease;
     }
-    #menuToggle li:hover {
-        color: tomato;
-    }
-    #menuToggle input {
+    .hamburger-menu input {
         display: block;
         width: 40px;
         height: 32px;
@@ -937,10 +932,12 @@ p:nth-child(n+7):nth-child(-n+8) {
         left: -5px;
         cursor: pointer;
         opacity: 0;
+        /* hide this */
         z-index: 2;
+        /* and place it over the hamburger */
         -webkit-touch-callout: none;
     }
-    #menuToggle span {
+    .hamburger-menu span {
         display: block;
         width: 33px;
         height: 4px;
@@ -952,39 +949,43 @@ p:nth-child(n+7):nth-child(-n+8) {
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
     }
-    #menuToggle span:first-child {
+    .hamburger-menu span:first-child {
         transform-origin: 0% 0%;
     }
-    #menuToggle span:nth-last-child(2) {
+    .hamburger-menu span:nth-last-child(2) {
         transform-origin: 0% 100%;
     }
-    #menuToggle input:checked~span {
+    .hamburger-menu input:checked~span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: #232323;
     }
-    #menuToggle input:checked~span:nth-last-child(3) {
+    .hamburger-menu input:checked~span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
-    #menuToggle input:checked~span:nth-last-child(2) {
+    .hamburger-menu input:checked~span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
     }
-    #menu {
+    .menu__box {
         position: absolute;
-        margin: -100px 0 0 10px;
+        width: 300px;
+        margin: -100px 0 0 -50px;
         padding: 50px;
         padding-top: 125px;
+        background: #ededed;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
         transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
+        transform: translate(100%, 0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
-    #menu a {
-        font-size: 18px;
+    .menu__box li {
+        padding: 10px 0;
+        font-size: 22px;
     }
-    #menuToggle input:checked~ul {
+    .hamburger-menu input:checked~ul {
         transform: none;
     }
     /* about */
@@ -1037,9 +1038,9 @@ p:nth-child(n+7):nth-child(-n+8) {
     .header__content {
         max-width: 400px;
     }
-    .header__top {
+    /* .header__top {
         justify-content: center;
-    }
+    } */
     .header::before {
         height: 30vh;
     }
@@ -1087,9 +1088,9 @@ p:nth-child(n+7):nth-child(-n+8) {
     .header__img {
         margin: 0 auto;
     }
-    .header__top {
+    /* .header__top {
         justify-content: center;
-    }
+    } */
     .header::before {
         height: 30vh;
     }
@@ -1143,9 +1144,9 @@ p:nth-child(n+7):nth-child(-n+8) {
     .header__img {
         margin: 0 auto;
     }
-    .header__top {
+    /* .header__top {
         justify-content: center;
-    }
+    } */
     .header::before {
         height: 30vh;
     }
